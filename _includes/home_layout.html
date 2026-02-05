@@ -1,0 +1,17 @@
+<div class="home-grid">
+  <div class="home-left">
+    <img class="home-photo" src="{{ site.photo_url | default: '/assets/img/photo.jpg' }}" alt="{{ site.name | default: 'Photo' }}">
+
+    <div class="home-links">
+      <p class="home-links-title">Links</p>
+      <p><a href="{{ site.cv_url | default: '#' }}">CV</a></p>
+      <p><a href="{{ site.institution_url | default: '#' }}">Institution</a></p>
+      <p><a href="{{ site.scholar_url | default: '#' }}">Google Scholar</a></p>
+      <p><a href="{{ site.orcid_url | default: '#' }}">ORCID</a></p>
+    </div>
+  </div>
+
+  <div class="home-main">
+    {{ content }}
+  </div>
+</div>
