@@ -2,3 +2,45 @@
 ---
 
 @import "minimal-light";
+---
+/* --- Home layout: left panel + main text --- */
+.home-grid{
+  display: grid;
+  grid-template-columns: 1.15fr 1.85fr;
+  gap: 56px;
+  align-items: start;
+  margin-top: 48px;
+}
+
+.home-photo{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.home-main{
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.home-links{
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 2px solid #111;
+}
+
+.home-links-title{
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.home-links p{
+  margin: 8px 0;
+}
+
+@media (max-width: 900px){
+  .home-grid{
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
