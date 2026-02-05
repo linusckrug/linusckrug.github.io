@@ -21,3 +21,21 @@
 .text-links a:hover{
   text-decoration: underline;
 }
+/* --- Warm light-gray theme (classic serif) --- */
+body{
+  background: #f5f3ee;
+  color: #161616;
+  font-family: "Times New Roman", Times, "Nimbus Roman No9 L", "Liberation Serif", Georgia, serif;
+}
+
+h1, h2, h3{
+  color: #111111;
+}
+
+a{
+  color: #1f5e4b;
+}
+
+a:hover{
+  color: #174838;
+}
