@@ -38,3 +38,13 @@ a{
 a:hover{
   color: #174838;
 }
+a:hover{
+  color: #174838;
+}
+
+/* Force ONE font everywhere */
+html, body, .wrapper, header, section, footer,
+h1, h2, h3, h4, h5, h6, p, li, a, small,
+position, email, autocolor {
+  font-family: "Times New Roman", Times, "Nimbus Roman No9 L", "Liberation Serif", Georgia, serif !important;
+}
