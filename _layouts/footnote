@@ -65,7 +65,6 @@
   <a href="{{ site.scholar_url | default: '#' }}">Google Scholar</a>
   <a href="{{ site.orcid_url | default: '#' }}">ORCID</a>
 </div>
-        </div>
         <br>
 
       </header>
