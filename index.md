@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: home
 ---
 
 ## About Me
