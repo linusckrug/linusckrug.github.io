@@ -55,3 +55,10 @@ exclude:
   - LICENSE
   - minimal-light.gemspec
   - html_source_file/
+
+
+photo_url: /assets/img/photo.jpg
+cv_url: #
+institution_url: #
+scholar_url: #
+orcid_url: #
