@@ -1,5 +1,9 @@
 ---
-layout: home
+---
+layout: homepage
+---
+
+{% include home_layout.html %}
 ---
 
 ## About Me
