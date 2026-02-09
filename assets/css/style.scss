@@ -78,3 +78,42 @@ a{
 a:hover{
   color: var(--link-hover) !important;
 }
+/* ===== Left column: left align everything, links inherit text color ===== */
+
+/* Left column container */
+.wrapper > header{
+  text-align: left !important;
+}
+
+/* Make sure your name/title is left-aligned */
+.wrapper > header h1{
+  text-align: left !important;
+  margin-left: 0 !important;
+}
+
+/* Your custom tags used by the theme */
+.wrapper > header position,
+.wrapper > header email,
+.wrapper > header autocolor{
+  display: block;
+  text-align: left !important;
+}
+
+/* Your vertical links block */
+.wrapper > header .text-links{
+  align-items: flex-start !important;
+  text-align: left !important;
+}
+
+/* Links should look like normal text (no special green/blue) */
+.wrapper > header .text-links a,
+.wrapper > header a{
+  color: inherit !important;
+  text-decoration: none;
+}
+
+.wrapper > header .text-links a:hover,
+.wrapper > header a:hover{
+  color: inherit !important;
+  text-decoration: underline;
+}
