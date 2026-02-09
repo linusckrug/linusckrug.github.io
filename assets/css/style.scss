@@ -42,9 +42,39 @@ a:hover{
   color: #174838;
 }
 
-/* Force ONE font everywhere */
-html, body, .wrapper, header, section, footer,
-h1, h2, h3, h4, h5, h6, p, li, a, small,
-position, email, autocolor {
+
+/* ===== Global look: light warm-gray + softer text + ONE font everywhere ===== */
+:root{
+  --bg: #f3f2ee;        /* light warm gray (not cold) */
+  --text: #3f3f3f;      /* soft gray text */
+  --headings: #222222;  /* darker but not pure black */
+  --link: #2f5f52;      /* muted green */
+  --link-hover: #23483f;
+}
+
+/* Page background + default text */
+html, body{
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+/* Force ONE serif everywhere (incl. custom tags like <position>, <email>) */
+*,
+*::before,
+*::after{
   font-family: "Times New Roman", Times, "Nimbus Roman No9 L", "Liberation Serif", Georgia, serif !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6{
+  color: var(--headings) !important;
+  font-weight: 600; /* slightly more “journal-like” */
+}
+
+/* Links */
+a{
+  color: var(--link) !important;
+}
+a:hover{
+  color: var(--link-hover) !important;
 }
