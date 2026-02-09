@@ -117,3 +117,14 @@ a:hover{
   color: inherit !important;
   text-decoration: underline;
 }
+/* ===== Left panel separator line ===== */
+.wrapper{
+  display: flex; /* ensure header + section sit side-by-side */
+}
+
+/* Left panel */
+.wrapper > header{
+  border-right: 1px solid rgba(255,255,255,0.9) !important;  /* the white line */
+  padding-right: 24px !important;
+  margin-right: 24px !important;
+}
