@@ -1,0 +1,26 @@
+# Edit this site (your control panel)
+
+## The only files you need day-to-day
+
+1) **Homepage content**
+- `index.md`
+
+2) **Site settings (name, affiliation, links, favicon/avatar paths)**
+- `_config.yml`
+
+3) **Design (font, background, colors, spacing)**
+- `assets/css/style.scss`
+
+4) **Layout (left panel structure, header/footer)**
+- `_layouts/homepage.html`
+
+## Quick links (open these in GitHub)
+- [index.md](./index.md)
+- [_config.yml](./_config.yml)
+- [style.scss](./assets/css/style.scss)
+- [homepage layout](./_layouts/homepage.html)
+- [images folder](./assets/img/)
+- [files folder (CV etc.)](./assets/files/)
+
+## Notes
+- Ignore everything else unless we explicitly decide to change it.
