@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linus | Personal Website</title>
+    <meta
+      name="description"
+      content="Personal website of Linus: research, projects, writing, and contact."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-blur bg-blur-a" aria-hidden="true"></div>
+    <div class="bg-blur bg-blur-b" aria-hidden="true"></div>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <img
+          class="avatar"
+          src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80"
+          alt="Portrait of Linus"
+        />
+        <h1>Linus</h1>
+        <p class="role">Builder, creator, and curious generalist</p>
+
+        <ul class="meta">
+          <li>Based in Zurich</li>
+          <li>Open to collaborations</li>
+          <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+        </ul>
+
+        <nav class="side-nav" aria-label="Section navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#writing">Writing</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="socials">
+          <a href="#" aria-label="GitHub profile">GitHub</a>
+          <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
+          <a href="#" aria-label="X profile">X</a>
+        </div>
+      </aside>
+
+      <main class="content">
+        <section class="panel reveal" id="about">
+          <p class="eyebrow">Welcome</p>
+          <h2>Designing digital products with technical depth and narrative clarity.</h2>
+          <p>
+            I build websites, tools, and experiments that make complex things feel simple.
+            My work usually sits at the intersection of product thinking, software engineering,
+            and storytelling.
+          </p>
+          <p>
+            This site is where I share selected projects, writing, and what I am currently
+            exploring.
+          </p>
+        </section>
+
+        <section class="panel reveal" id="projects">
+          <div class="section-head">
+            <p class="eyebrow">Selected Work</p>
+            <h3>Projects</h3>
+          </div>
+          <div class="cards">
+            <article class="card">
+              <h4>Project Atlas</h4>
+              <p>
+                A visual knowledge map for organizing research notes and ideas into connected
+                themes.
+              </p>
+              <a href="#">Case study</a>
+            </article>
+            <article class="card">
+              <h4>Signal Dashboard</h4>
+              <p>
+                A lightweight analytics dashboard for tracking user behavior and product health in
+                real time.
+              </p>
+              <a href="#">Live demo</a>
+            </article>
+            <article class="card">
+              <h4>Studio Journal</h4>
+              <p>
+                A writing series documenting design and development decisions behind shipped
+                products.
+              </p>
+              <a href="#">Read entries</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel reveal" id="experience">
+          <div class="section-head">
+            <p class="eyebrow">Background</p>
+            <h3>Experience</h3>
+          </div>
+          <div class="timeline">
+            <div>
+              <p class="timeline-year">2024 - Present</p>
+              <h4>Independent Web Builder</h4>
+              <p>
+                Building web experiences for founders and creators, from concept to launch.
+              </p>
+            </div>
+            <div>
+              <p class="timeline-year">2022 - 2024</p>
+              <h4>Product Engineer</h4>
+              <p>
+                Worked across frontend and backend to ship user-facing features and improve
+                platform reliability.
+              </p>
+            </div>
+            <div>
+              <p class="timeline-year">2019 - 2022</p>
+              <h4>Design + Development Generalist</h4>
+              <p>
+                Bridged UX design and implementation for early-stage digital products.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel reveal" id="writing">
+          <div class="section-head">
+            <p class="eyebrow">Ideas</p>
+            <h3>Writing</h3>
+          </div>
+          <ul class="writing-list">
+            <li><a href="#">What most portfolio sites still get wrong in 2026</a></li>
+            <li><a href="#">From static pages to narrative interfaces</a></li>
+            <li><a href="#">How to keep visual style from fighting usability</a></li>
+          </ul>
+        </section>
+
+        <section class="panel reveal" id="contact">
+          <div class="section-head">
+            <p class="eyebrow">Get in Touch</p>
+            <h3>Contact</h3>
+          </div>
+          <p>
+            I am open to collaborations, freelance projects, and thoughtful conversations.
+            If you have an idea in mind, send me a message.
+          </p>
+          <a class="button" href="mailto:hello@example.com">Email Me</a>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
