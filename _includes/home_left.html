@@ -1,0 +1,10 @@
+{% assign photo = site.photo_url | default: '/assets/img/photo.jpg' %}
+
+<img class="home-photo" src="{{ photo }}" alt="{{ site.title | default: 'Photo' }}">
+
+<div class="text-links">
+  <a href="{{ site.cv_url | default: '#' }}">Curriculum Vitae</a>
+  <a href="{{ site.institution_url | default: '#' }}">Institution</a>
+  <a href="{{ site.scholar_url | default: '#' }}">Google Scholar</a>
+  <a href="{{ site.orcid_url | default: '#' }}">ORCID</a>
+</div>

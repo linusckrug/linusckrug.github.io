@@ -1,0 +1,130 @@
+---
+---
+@import "minimal-light";
+
+/* Custom: left links vertical */
+.text-links{
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  text-align: left;
+}
+
+.text-links a{
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.text-links a:hover{
+  text-decoration: underline;
+}
+/* --- Warm light-gray theme (classic serif) --- */
+body{
+  background: #f6f2ea;
+  color: #161616;
+  font-family: "Times New Roman", Times, "Nimbus Roman No9 L", "Liberation Serif", Georgia, serif;
+}
+
+h1, h2, h3{
+  color: #111111;
+}
+
+a{
+  color: #1f5e4b;
+}
+
+a:hover{
+  color: #174838;
+}
+a:hover{
+  color: #174838;
+}
+
+
+/* ===== Global look: light warm-gray + softer text + ONE font everywhere ===== */
+:root{
+  --bg: #f3f2ee;        /* light warm gray (not cold) */
+  --text: #3f3f3f;      /* soft gray text */
+  --headings: #222222;  /* darker but not pure black */
+  --link: #2f5f52;      /* muted green */
+  --link-hover: #23483f;
+}
+
+/* Page background + default text */
+html, body{
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+/* Force ONE serif everywhere (incl. custom tags like <position>, <email>) */
+*,
+*::before,
+*::after{
+  font-family: "Times New Roman", Times, "Nimbus Roman No9 L", "Liberation Serif", Georgia, serif !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6{
+  color: var(--headings) !important;
+  font-weight: 600; /* slightly more “journal-like” */
+}
+
+/* Links */
+a{
+  color: var(--link) !important;
+}
+a:hover{
+  color: var(--link-hover) !important;
+}
+/* ===== Left column: left align everything, links inherit text color ===== */
+
+/* Left column container */
+.wrapper > header{
+  text-align: left !important;
+}
+
+/* Make sure your name/title is left-aligned */
+.wrapper > header h1{
+  text-align: left !important;
+  margin-left: 0 !important;
+}
+
+/* Your custom tags used by the theme */
+.wrapper > header position,
+.wrapper > header email,
+.wrapper > header autocolor{
+  display: block;
+  text-align: left !important;
+}
+
+/* Your vertical links block */
+.wrapper > header .text-links{
+  align-items: flex-start !important;
+  text-align: left !important;
+}
+
+/* Links should look like normal text (no special green/blue) */
+.wrapper > header .text-links a,
+.wrapper > header a{
+  color: inherit !important;
+  text-decoration: none;
+}
+
+.wrapper > header .text-links a:hover,
+.wrapper > header a:hover{
+  color: inherit !important;
+  text-decoration: underline;
+}
+/* ===== Left panel separator line ===== */
+.wrapper{
+  display: flex; /* ensure header + section sit side-by-side */
+}
+
+/* Left panel */
+.wrapper > header{
+  border-right: 1px solid rgba(255,255,255,0.9) !important;  /* the white line */
+  padding-right: 24px !important;
+  margin-right: 24px !important;
+}
