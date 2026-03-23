@@ -381,8 +381,8 @@ h1 {
   }
 
   h1 {
-    font-size: 1.9rem;
-    margin-bottom: -0.08rem;
+    font-size: 2.05rem;
+    margin-bottom: -0.18rem;
     grid-column: 2;
     align-self: start;
   }
@@ -390,7 +390,7 @@ h1 {
   .affiliation {
     font-size: 0.68rem;
     white-space: normal;
-    margin: -0.18rem 0 0;
+    margin: -0.3rem 0 0;
     grid-column: 2;
     align-self: start;
   }
