@@ -389,6 +389,7 @@ h1 {
     grid-row: 1;
     align-self: start;
     padding-left: 0.4rem;
+    margin-top: -0.08rem;
   }
 
   .sidebar-intro h1 {
