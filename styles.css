@@ -367,24 +367,37 @@ h1 {
 
   .sidebar {
     display: grid;
+    grid-template-columns: 120px minmax(0, 1fr);
+    align-items: start;
     gap: 0.7rem;
   }
 
   .avatar {
     width: 120px;
     aspect-ratio: 1 / 1;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0;
+    grid-column: 1;
+    grid-row: 1 / span 2;
   }
 
   h1 {
     font-size: 1.5rem;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.2rem;
+    grid-column: 2;
+    align-self: end;
   }
 
   .affiliation {
     font-size: 0.68rem;
     white-space: normal;
-    margin: 0 0 0.5rem;
+    margin: 0;
+    grid-column: 2;
+    align-self: start;
+  }
+
+  .key-links,
+  .socials {
+    grid-column: 1 / -1;
   }
 
   .key-links a,
