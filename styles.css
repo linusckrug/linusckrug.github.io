@@ -390,15 +390,17 @@ h1 {
     align-self: start;
   }
 
-  h1 {
+  .sidebar-intro h1 {
     font-size: 2.05rem;
-    margin-bottom: -0.22rem;
+    margin: 0;
+    line-height: 1;
   }
 
-  .affiliation {
+  .sidebar-intro .affiliation {
     font-size: 0.68rem;
     white-space: normal;
-    margin: 0;
+    margin: 0.02rem 0 0;
+    line-height: 1.15;
   }
 
   .key-links,
