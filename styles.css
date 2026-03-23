@@ -409,12 +409,21 @@ h1 {
   .key-links,
   .socials {
     grid-column: 1 / -1;
-    display: contents;
+    display: grid;
+    gap: 0.55rem;
+  }
+
+  .key-links {
+    margin-top: 0.55rem;
+  }
+
+  .socials {
+    margin-top: 0.55rem;
   }
 
   .key-links a,
   .socials a {
-    margin-top: 0.55rem;
+    margin-top: 0;
     padding: 0.48rem 0.72rem;
     font-size: 0.93rem;
   }
